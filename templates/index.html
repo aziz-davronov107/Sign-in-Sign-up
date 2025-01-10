@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if Title %} {{Title}}-page {% endif %}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='sign_in.css')}}">
+</head>
+<body>
+    <nav>
+        <a href="/" class="active"><h2 style="color: white;">Sign in</h2></a>
+        <a href="/sign up/" class="no-active"> <h2>Sign up</h2></a>
+        <div class="activ"></div>
+    </nav>
+
+
+    <form action="/sign in/" method="POST">
+        <ul type ="none">
+            <li><label class="lable">username</label>
+                <input type="text" class="input" required name="username">
+            </li>
+            <li><label class="lable">password</label>
+                <input type="text" class="input" required name="password">
+            </li>
+            <li><input type="checkbox" class="checkbox">
+                <label for="" style="color:rgba(0, 0, 0, 0.4);">Keep me Signed in</label>
+            </li>
+            <li>
+                <button type="submit" style="width: 400px; height: 40px; background-color: rgb(91, 91, 216); border-radius: 20px; margin: 20px 0; color: white;">Sign in</button>
+            </li>
+        </ul>
+    </form>
+
+    <hr>
+
+    <footer>
+        <a href="#" class="no-active">Forgot password?</a>
+    </footer>
+</body>
+</html>

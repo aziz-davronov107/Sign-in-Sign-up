@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+   background-color: rgb(39, 72, 72);
+   margin-top: 6%;
+
+}
+.lable{
+    display: block;
+    font-size: 13px;
+    color: grey;
+    text-transform: uppercase;
+}
+.input{
+    border-radius: 20px;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(117, 193, 193);
+    color: white;
+    padding: 10px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 7rem 7rem;
+    text-transform: uppercase;
+    margin: 20px 35%;
+    text-decoration: none;
+    
+
+}
+.no-active{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+}
+.active{
+    color: blueviolet;
+   
+
+
+}
+form ul{
+    margin: 10px 35%;
+}
+.checkbox{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.4);
+}
+hr{
+    margin: 40px 300px;
+}
+footer a{
+    margin: 0 45.2%;
+    color: rgb(0,0,0,0.4);
+    
+}

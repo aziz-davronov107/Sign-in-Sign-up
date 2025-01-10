@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if Title %} {{Title}}-page {% endif %}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='sign_up.css')}}">
+</head>
+<body>
+    <nav>
+        <a href="/" class="no-active"><h2 >Sign in</h2></a>
+        <a href="/sign up/"class="active"> <h2 style="color: white;">Sign up</h2></a>
+        <div class="activ"></div>
+    </nav>
+
+
+    <form action="/sign up/" method="POST">
+        <ul type ="none">
+            <li><label class="lable">username</label>
+                <input type="text" class="input" required name="username">
+            </li>
+            <li><label class="lable">password</label>
+                <input type="text" class="input" required name="password">
+            </li>
+           
+            <li><label class="lable">repeate password</label>
+                <input type="text" class="input" required name="repeat_password">
+            </li>
+            <li><label class="lable">email address</label>
+                <input type="text" class="input" required name="email_address">
+            </li>
+            <li><input type="checkbox" class="checkbox">
+                <label for="" style="color:rgba(0, 0, 0, 0.4);">Keep me Signed in</label>
+            </li>
+                <label for="" class="error">{% if usererror %} <p>{{usererror}}</p> {% elif error %} <p>{{error}}</p> {% endif %}</label>
+            <li>
+                <button type="submit" style="width: 400px; height: 40px; background-color: rgb(91, 91, 216); border-radius: 20px; margin: 20px 0; color: white;">Sign up</button>
+            </li>
+            
+        </ul>
+    </form>
+
+    <hr>
+
+    
+</body>
+</html>
